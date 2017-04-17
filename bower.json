@@ -1,0 +1,21 @@
+{
+  "name": "fs-angular-creditcard",
+  "description": "",
+  "main": [
+    "dist/creditcard.js",
+    "dist/creditcard.css"
+  ],
+  "dependencies": {
+  	"googlestub.js": "dist/googlestub.js",
+    "fs-angular-address": "^1.0.0"
+  },
+  "authors": [
+    "Firestitch Inc."
+  ],
+  "license": "MIT",
+  "ignore": [
+    "src",
+    ".gitignore"
+  ],
+  "private": false
+}
