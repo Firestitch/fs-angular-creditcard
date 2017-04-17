@@ -1,18 +1,18 @@
 
 fs-creditcard .cc .icon.visa {
-	background-image: url('/images/visa.png');
+	background-image: url('/images/cards/visa.png');
 }
 
 fs-creditcard .cc .icon.amex {
-	background-image: url('/images/amex.png');
+	background-image: url('/images/cards/amex.png');
 }
 
 fs-creditcard .cc .icon.mastercard {
-	background-image: url('/images/mastercard.png');
+	background-image: url('/images/cards/mastercard.png');
 }
 
 fs-creditcard .cc .icon.unknown {
-	background-image: url('/images/unknown.png');
+	background-image: url('/images/cards/unknown.png');
 }
 
 fs-creditcard .cc-cvc {
