@@ -6,7 +6,6 @@
     "dist/creditcard.css"
   ],
   "dependencies": {
-  	"googlestub": "./bower_components/fs-angular-creditcard/dist/googlestub.js",
     "fs-angular-address": "^1.0.0"
   },
   "authors": [
