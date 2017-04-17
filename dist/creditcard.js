@@ -64,7 +64,7 @@
     });
 })();
 
-angular.module('fs-angular-angular-creditcard').run(['$templateCache', function($templateCache) {
+angular.module('fs-angular-creditcard').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('views/directives/creditcard.html',

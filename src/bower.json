@@ -1,5 +1,5 @@
 {
-  "name": "fs-angular-angular-creditcard",
+  "name": "fs-angular-creditcard",
   "namespace": "creditcard",
   "port": "5049",
   "moduleName": "app",
