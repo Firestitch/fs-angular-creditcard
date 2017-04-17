@@ -1,0 +1,35 @@
+
+fs-creditcard .cc .icon.visa {
+	background-image: url('images/visa.png');
+}
+
+fs-creditcard .cc .icon.amex {
+	background-image: url('images/amex.png');
+}
+
+fs-creditcard .cc .icon.mastercard {
+	background-image: url('images/mastercard.png');
+}
+
+fs-creditcard .cc .icon.unknown {
+	background-image: url('images/unknown.png');
+}
+
+fs-creditcard .cc-cvc {
+	width: 80px;
+}
+
+
+fs-creditcard .cc-number {
+	position: relative;
+	    padding-right: 60px;
+}
+
+fs-creditcard .cc-number .icon {
+	width: 48px;
+    height: 29px;
+    position: absolute;
+    background-size: contain;
+    right: 0;
+
+}

@@ -5,8 +5,10 @@
   .controller('DemoCtrl', function ($scope) {
 
 
-    $scope.text = '';
-    
+    $scope.address = {};
+    $scope.card = {};
+    $scope.options = { cvc: true, address: true, name: true };
+
     $scope.submit = function() {
         alert('submit');
     }
