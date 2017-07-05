@@ -18,8 +18,8 @@
             	$scope.options = $scope.options || {};
             	$scope.options.address = fsUtil.value($scope.options,'address',false);
 
-		    	var year = (new Date()).getYear() + 2000;
-		    	$scope.years= [];
+		    	var year = (new Date()).getFullYear();
+		    	$scope.years = [];
 		    	for(var i=0; i<10; i++) {
 		    		$scope.years.push({ name: year + i, value: year + i });
 		    	}
