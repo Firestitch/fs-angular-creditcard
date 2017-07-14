@@ -17,7 +17,6 @@
 	Visa	4
 	Visa Electron	4026, 417500, 4405, 4508, 4844, 4913, 4917
 	*/
-
     angular.module('fs-angular-creditcard',['fs-angular-address','fs-angular-util'])
     .directive('fsCreditcard', function($location) {
         return {
@@ -44,8 +43,8 @@
 				            							},$scope.options.address);
 	            }
 
-		    	var year = (new Date()).getYear() + 2000;
-		    	$scope.years= [];
+		    	var year = (new Date()).getFullYear();
+		    	$scope.years = [];
 		    	for(var i=0; i<10; i++) {
 		    		$scope.years.push({ name: year + i, value: year + i });
 		    	}
