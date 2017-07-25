@@ -15,7 +15,7 @@
 	<div layout="row">
 		<md-input-container class="md-block" flex>
 		    <label>Expiry Month</label>
-		    <md-select ng-model="card.expiry_month" name="expiry_month">
+		    <md-select ng-model="card.expiry_month" name="expiry_month" required>
 		        <md-option value="1">01</md-option>
 		        <md-option value="2">02</md-option>
 		        <md-option value="3">03</md-option>
@@ -33,7 +33,7 @@
 
 		<md-input-container class="md-block" flex>
 		    <label>Expiry Year</label>
-		    <md-select ng-model="card.expiry_year" name="expiry_year">
+		    <md-select ng-model="card.expiry_year" name="expiry_year" required>
 		        <md-option value="{{year.value}}" ng-repeat="year in years">{{year.name}}</md-option>
 		    </md-select>
 		</md-input-container>
