@@ -5,7 +5,8 @@ angular
     'config',
     'ui.router',
     'ngMaterial',
-    'fs-angular-creditcard'
+    'fs-angular-creditcard',
+    'fs-angular-validate'
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
 

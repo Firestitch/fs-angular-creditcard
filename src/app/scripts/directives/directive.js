@@ -31,17 +31,20 @@
 
             	$scope.address = $scope.address || {};
             	$scope.card = $scope.card || {};
-            	$scope.options = $scope.options || {};
 
-            	if($scope.options.address!==false) {
-	            	$scope.options.address = angular.merge({address: { required: true },
-				            								city: { required: true },
-				            								region: { required: true },
-				            								zip: { required: true },
-				            								country: { required: true },
-				            								map: false,
-				            							},$scope.options.address);
-	            }
+            	$scope.$watch('options',function(options) {
+            		$scope.options = $scope.options || {};
+
+	            	if($scope.options.address!==false) {
+		            	$scope.options.address = angular.merge({address: { required: true },
+					            								city: { required: true },
+					            								region: { required: true },
+					            								zip: { required: true },
+					            								country: { required: true },
+					            								map: false,
+					            							},$scope.options.address);
+		            }
+		        });
 
 		    	var year = (new Date()).getFullYear();
 		    	$scope.years = [];

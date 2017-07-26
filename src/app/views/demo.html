@@ -1,1 +1,9 @@
-<fs-creditcard fs-address="address" fs-options="options" fs-card="card"></fs-creditcard>
+<form fs-validate="submit()">
+	<fs-creditcard fs-address="address" fs-options="{ cvc: true }" fs-card="card"></fs-creditcard>
+</form>
+
+<h2>Card</h2>
+{{card}}
+
+<h2>Address</h2>
+{{address}}
