@@ -1,7 +1,7 @@
 <div class="cc">
 	<md-input-container class="md-block cc-name" ng-if="options.name">
 	    <label>Cardholder's Name</label>
-	    <input type="text" ng-model="card.name" name="name" required>
+	    <input type="text" ng-model="card.name" name="name" required ng-disabled="options.disabled">
 	</md-input-container>
 
 	<div layout="row">
@@ -9,13 +9,13 @@
 		    <label>Credit Card Number</label>
 		    <div class="icon {{card.type}}" ng-show="card.type"></div>
 		    <div class="icon unknown" ng-show="!card.type"></div>
-		    <input type="text" ng-model="card.number" name="number" required>
+		    <input type="text" ng-model="card.number" name="number" required ng-disabled="options.disabled">
 		</md-input-container>
 	</div>
 	<div layout="row">
 		<md-input-container class="md-block" flex>
 		    <label>Expiry Month</label>
-		    <md-select ng-model="card.expiry_month" name="expiry_month" required>
+		    <md-select ng-model="card.expiry_month" name="expiry_month" required ng-disabled="options.disabled">
 		        <md-option value="1">01</md-option>
 		        <md-option value="2">02</md-option>
 		        <md-option value="3">03</md-option>
@@ -33,14 +33,14 @@
 
 		<md-input-container class="md-block" flex>
 		    <label>Expiry Year</label>
-		    <md-select ng-model="card.expiry_year" name="expiry_year" required>
+		    <md-select ng-model="card.expiry_year" name="expiry_year" required ng-disabled="options.disabled">
 		        <md-option value="{{year.value}}" ng-repeat="year in years">{{year.name}}</md-option>
 		    </md-select>
 		</md-input-container>
 
 		<md-input-container class="md-block cc-cvc" ng-if="options.cvc">
 		    <label>CVC</label>
-		    <input type="text" ng-model="card.cvc" name="cvc" required>
+		    <input type="text" ng-model="card.cvc" name="cvc" required ng-disabled="options.disabled">
 		</md-input-container>
 	</div>
 </div>
