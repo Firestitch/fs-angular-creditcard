@@ -16,7 +16,7 @@ fs-creditcard .cc .icon.unknown {
 }
 
 fs-creditcard .cc-cvc {
-	width: 80px;
+	min-width: 80px;
 }
 
 

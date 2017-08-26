@@ -6,13 +6,13 @@
 
 	<div layout="row">
 		<md-input-container class="md-block cc-number" flex>
-		    <label>Credit Card Number</label>
+		    <label>Card Number</label>
 		    <div class="icon {{card.type}}" ng-show="card.type"></div>
 		    <div class="icon unknown" ng-show="!card.type"></div>
 		    <input type="text" ng-model="card.number" name="number" required>
 		</md-input-container>
 	</div>
-	<div layout="row">
+	<div layout="row" layout-xs="column" layout-sm="column">
 		<md-input-container class="md-block" flex>
 		    <label>Expiry Month</label>
 		    <md-select ng-model="card.expiry_month" name="expiry_month" required>
