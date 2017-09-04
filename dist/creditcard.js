@@ -58,7 +58,7 @@
 		    					amex: [34,37],
 		    					mastercard: [50,51,52,53,54,55] };
 		    	$scope.$watch('card.number',function(number) {
-		    		$scope.card.type = undefined;
+		    		$scope.card.type = $scope.card.type || undefined;
 		    		var number = fsUtil.string(number);
 		    		angular.forEach(cards,function(values,type) {
 		    			angular.forEach(values,function(value) {
