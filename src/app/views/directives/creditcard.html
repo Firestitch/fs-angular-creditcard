@@ -9,7 +9,7 @@
 		    <label>Card Number</label>
 		    <div class="icon {{card.type}}" ng-show="card.type"></div>
 		    <div class="icon unknown" ng-show="!card.type"></div>
-		    <input type="text" ng-model="card.number" name="number" required ng-disabled="options.disabled">
+		    <input type="text" ng-model="card.number" name="number" required integer ng-disabled="options.disabled">
 		</md-input-container>
 	</div>
 	<div layout="row" layout-xs="column" layout-sm="column">
@@ -43,7 +43,7 @@
 		<div>
 			<md-input-container class="md-block cc-cvc" ng-if="options.cvc">
 			    <label>CVC</label>
-			    <input type="text" ng-model="card.cvc" name="cvc" required ng-disabled="options.disabled">
+			    <input type="text" ng-model="card.cvc" name="cvc" required integer ng-disabled="options.disabled">
 			</md-input-container>
 		</div>
 	</div>
