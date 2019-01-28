@@ -9,7 +9,8 @@
 		    <label>Card Number</label>
 		    <div class="icon {{card.type}}" ng-show="card.type"></div>
 		    <div class="icon unknown" ng-show="!card.type"></div>
-		    <input type="text" ng-model="card.number" name="number" required integer ng-disabled="options.disabled">
+			<input type="text" ng-model="card.number" name="number" required integer ng-disabled="options.disabled">
+			<md-hint ng-if="options.cardNumberHint">{{ options.cardNumberHint }}</md-hint>
 		</md-input-container>
 	</div>
 	<div layout="row" layout-xs="column" layout-sm="column">

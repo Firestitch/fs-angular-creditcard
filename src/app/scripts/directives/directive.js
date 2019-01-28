@@ -34,7 +34,8 @@
 
             	$scope.$watch('options',function(options) {
             		$scope.options = $scope.options || {};
-                    $scope.options.disabled = $scope.options.disabled || false;
+					$scope.options.disabled = $scope.options.disabled || false;
+					$scope.options.cardNumberHint = $scope.options.cardNumberHint || null;
 
 	            	if($scope.options.address!==false) {
 		            	$scope.options.address = angular.merge({address: { required: true },
