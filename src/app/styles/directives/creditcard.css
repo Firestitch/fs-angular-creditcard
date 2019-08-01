@@ -19,7 +19,6 @@ fs-creditcard .cc-cvc {
 	min-width: 80px;
 }
 
-
 fs-creditcard .cc-number {
 	position: relative;
 	padding-right: 60px;
@@ -32,4 +31,8 @@ fs-creditcard .cc-number .icon {
     background-size: contain;
     right: 0;
 
+}
+
+fs-creditcard .cc-number md-hint {
+	float: left;
 }
