@@ -11,6 +11,10 @@ fs-creditcard .cc .icon.mastercard {
 	background-image: url('/images/cards/mastercard.png');
 }
 
+fs-creditcard .cc .icon.discover {
+	background-image: url('/images/cards/discover.png');
+}
+
 fs-creditcard .cc .icon.unknown {
 	background-image: url('/images/cards/unknown.png');
 }

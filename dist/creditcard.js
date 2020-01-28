@@ -57,7 +57,8 @@
 
 		    	var cards = { 	visa: [4],
 		    					amex: [34,37],
-		    					mastercard: [50,51,52,53,54,55] };
+								mastercard: [50,51,52,53,54,55],
+								discover: ['(?:6(?:011|5[0-9][0-9])[0-9]{12})$'] };
 		    	$scope.$watch('card.number',function(number) {
 		    		$scope.card.type = $scope.card.type || undefined;
 		    		var number = fsUtil.string(number);
